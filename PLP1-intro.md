@@ -22,10 +22,14 @@ For this semester I will mostly be using the information from https://www.ruby-l
 
 ### Sources
 
-Wikipedia.org https://en.wikipedia.org/wiki/Ruby_(programming_language) Accessed Jan. 25, 2016.*
-Patshaughnessy.net http://patshaughnessy.net/2012/6/29/how-ruby-executes-your-code Accessed Jan. 25, 2016.*
-Wikipedia.org https://en.wikipedia.org/wiki/YARV Accessed Jan. 26, 2016.*
-Ruby-doc.com http://ruby-doc.com/docs/ProgrammingRuby/ Accessed Jan. 28, 2016.*
-Patshaughnessy.net http://patshaughnessy.net/2012/2/15/is-ruby-interpreted-or-compiled Accessed Jan. 28, 2016.*
+Wikipedia.org https://en.wikipedia.org/wiki/Ruby_(programming_language) Accessed Jan. 25, 2016.
+
+Patshaughnessy.net http://patshaughnessy.net/2012/6/29/how-ruby-executes-your-code Accessed Jan. 25, 2016.
+
+Wikipedia.org https://en.wikipedia.org/wiki/YARV Accessed Jan. 26, 2016.
+
+Ruby-doc.com http://ruby-doc.com/docs/ProgrammingRuby/ Accessed Jan. 28, 2016.
+
+Patshaughnessy.net http://patshaughnessy.net/2012/2/15/is-ruby-interpreted-or-compiled Accessed Jan. 28, 2016.
 .
 
