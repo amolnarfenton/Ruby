@@ -1,6 +1,6 @@
 ### Intro to Ruby
 
-Ruby is a high- level language that incorperates multiple programming paradigms such as functional, object-oriented and imperative. Since it is both a compiled and interprered language Ruby allows the code to be compiled in to bytecode and then interpreted by the virtual machine. It does not come with a virtual machine but a developer by the name of Koichi Sasada created a Yet Another Virtual Machine (YARV) with the purpose of reducing the processing time.
+Ruby is a high- level language that incorperates multiple programming paradigms such as functional, object-oriented and imperative. Since it is both a compiled and interprered language Ruby allows the code to be compiled and then interpreted by the virtual machine. I'm not sure if Ruby needs a virtual machine but a developer by the name of Koichi Sasada did created Yet Another Virtual Machine (YARV) with the purpose of reducing the processing time.
 
 ### History
 
