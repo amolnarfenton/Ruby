@@ -18,10 +18,10 @@ ruby your_program_name.rb
 
 
 ### Writing in Ruby
-If you have used other languages such as Python and Perl you’ll be familiar with putting print before a statement you would like to be printed. Well in the case of Ruby its version of print is put. For example:
+If you have used other languages such as Python and Perl you’ll be familiar with putting print before a statement you would like to be printed. Well in the case of Ruby its version of print is puts. For example:
 
 ```
-put “Hello World”
+puts “Hello World”
 ```
 
 As you can see there is no semicolon (;) after the statement. This is because Ruby does not require any semicolons unless there is more than one statement on a single line.
