@@ -18,7 +18,7 @@ ruby your_program_name.rb
 
 
 ### Writing in Ruby
-If you have used other languages such as Python and Perl you’ll be familiar with putting print before a statement you would like to be printed. Well in the case of Ruby its version of print in put. For example:
+If you have used other languages such as Python and Perl you’ll be familiar with putting print before a statement you would like to be printed. Well in the case of Ruby its version of print is put. For example:
 
 ```
 put “Hello World”
