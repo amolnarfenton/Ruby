@@ -10,7 +10,7 @@ If Ruby is installed it will tell you the version, if not an error message will 
 Since Windows does not come with Ruby preinstalled you can either go to https://www.ruby-lang.org/en/downloads/ or http://rubyinstaller.org for installation.
 
 ###Creating and Running Ruby
-Ruby can be written using an IDE(Integrated Development Environment) such as RubyMine https://www.jetbrains.com/ruby/ or Aptana Studio http://www.aptana.com but using a text editor is prefered by most people who program in Ruby. There are a lot of text editors out there, consider picking one with syntax higlighting to make coding easier. Here is a link to help you pick the right one (http://lifehacker.com/five-best-text-editors-1564907215).  Also, you should note, by using a text editor your program will run from the command line (terminal). In order to call your program you should use the name of your program your_program_name.rb and this is what it would look like written in the terminal:
+Ruby can be written using an IDE(Integrated Development Environment) such as RubyMine https://www.jetbrains.com/ruby/ or Aptana Studio http://www.aptana.com but using a text editor is prefered by most people who program in Ruby. Since there are a lot of text editors out there you want to consider picking one with syntax higlighting to make coding easier. Here is a link to help you pick the right one (http://lifehacker.com/five-best-text-editors-1564907215).  Also, you should note, by using a text editor your program will run from the command line (terminal). In order to call your program you should use the name of your program your_program_name.rb, this is what it would look like written in the terminal:
 
 ```
 ruby your_program_name.rb
