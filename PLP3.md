@@ -3,6 +3,23 @@ In Ruby local variable names either start with lowercase letters (a-z) or and un
 
 Since Ruby is a dynamically typed language variables are interpreted at runtime and because it is also a strongly typed language all type errors are identified at the runtime.  
 
+Lets look at an example to get familar with Ruby:
+```
+x = "5" + 6
+puts x
+```
+This peice of code will not compile because ruby cannot add a string type with an integer type. To fix this so it can compile either the string 5 has to becoming a number as such:
+```
+x = 5 + 6
+puts x
+11
+```
+Or the whole statment has to become a string like such:
+```
+x = "5 + 6"
+puts x
+5 + 6
+```
 
 
 
