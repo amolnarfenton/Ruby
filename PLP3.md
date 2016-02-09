@@ -8,6 +8,9 @@ Since Ruby is a dynamically typed language variables are interpreted at runtime 
 
 
 
+
+
+
 ### Source
 http://rubylearning.com/satishtalim/ruby_names.html Accessed February 7, 2016.
 
