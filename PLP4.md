@@ -7,6 +7,7 @@ The code would look like this:
 x=1
 if x > 2
   puts "x is greater than 2"
+end
 
 ```
 Now if you want to make your code a multi-step conditonal statement you can add and elsif condition afterwards. 
