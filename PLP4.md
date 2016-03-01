@@ -41,11 +41,28 @@ x is less than 10
 ```
 
 ###Short-Curcit Evaluation
+Short-curcit evaluation is when there is a conditional statement with two parts and the second part only gets checked if the first part is false. This applies to && (and) and || (or). Below is an example for a && statement but the && could easily be replaced by || and shot-circut evaluation would still work:
+```
+x = 5
+if x=5 && x>10
+end
+```
+In this case Ruby won't even look at x>10 becuase x=5 is a true statement.
+
+
+###Dangeling Else
+
+
+
 
 
 ###Sources
 
-http://code.tutsplus.com/tutorials/ruby-for-newbies-conditional-statements-and-loops--net-16537 Acessed
+http://code.tutsplus.com/tutorials/ruby-for-newbies-conditional-statements-and-loops--net-16537 Accessed February 20, 2016.
+
+http://blog.revathskumar.com/2013/05/short-circuit-evaluation-in-ruby.html Accessed February 21, 2016.
+
+
 
 
 
