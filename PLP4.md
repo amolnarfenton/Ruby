@@ -125,34 +125,112 @@ Value of local variable is 5
 ```
 
 ###Exiting Loops And Other Stuff
-Sometime in your code you want to be able to exit out of a loop immediatly without going through the rest of the code this is where a break comes in. An example of this is:
+Sometime in your code you want to be able to exit out of a loop immediatly without going through the rest of the code this is where a break comes in. A break terminates the most inner loop. An example of this is:
 ```
 for i in 0..5
-  if i > 2 then
+  if i > 3 then
       break
     end
    puts "Value of local variable is #{i}"
 end
 ```
 Giving the result:
+```
 Value of local variable is 0
-
 Value of local variable is 1
-
 Value of local variable is 2
+Value of local variable is 3
+```
+
+In some languages there is a reserved word called continue that allows you to keep going through the code. For Ruby the equivalent is the reserve word next. Next allows you to jump from where you are to the next inner loop of code. An example of this is:
+```
+for i in 0..5
+  if i > 2 then
+      next
+    end
+   puts "Value of local variable is #{i}"
+end
+```
+```
+Value of local variable is 2
+Value of local variable is 3
+Value of local variable is 4
+Value of local variable is 5
+```
+In addtion to the break and next function there is also a redo and retry funtion. The redo function restart the most inner loop of code without checking conditions. While the retry function keeps re-evaluating the code so it forms an infinte loop.
+```
+for i in 1..5
+   retry if  i > 2
+   puts "Value of local variable is #{i}"
+end
+```
+Produce an infinite loop:
+```
+Value of local variable is 1
+Value of local variable is 2
+Value of local variable is 1
+Value of local variable is 2
+Value of local variable is 1
+Value of local variable is 2
+```
+
+
+###Switch Cases
+In Ruby these is something called a case statement. A case statement works by testing a condition statment by walking through possible matches by using a when. An example looks like this:
+
+```
+grade = gets.chomp
+case grade
+when "A"
+  puts 'Well done!'
+when "B"
+  puts 'Try harder!'
+when "C"
+  puts 'You need help!!!'
+else
+  puts "You just making it up!"
+end
+```
+
+The cool thing about case statements in Ruby is that you have a multi-value scenario such as this:
+```
+grade = gets.chomp
+case grade
+when "A", "B"
+  puts 'Well done!'
+when "C", "D"
+  puts 'Better luck next time!!'
+else
+  puts "Uh Oh!"
+end
+```
+Another really cool thing about case statements it that you can use them without a given value to match with like this:
+```
+some_string = gets.chomp
+case
+when some_string.match(/\d/)
+  puts 'String has numbers'
+when some_string.match(/[a-zA-Z]/)
+  puts 'String has letters'
+else
+  puts 'String has no numbers or letters'
+end
+```
 
 
 ###Sources
 
-http://code.tutsplus.com/tutorials/ruby-for-newbies-conditional-statements-and-loops--net-16537 Accessed February 20, 2016.
+http://code.tutsplus.com/tutorials/ruby-for-newbies-conditional-statements-and-loops--net-16537 Accessed February 24, 2016.
 
-http://blog.revathskumar.com/2013/05/short-circuit-evaluation-in-ruby.html Accessed February 21, 2016.
+http://blog.revathskumar.com/2013/05/short-circuit-evaluation-in-ruby.html Accessed February 25, 2016.
 
-http://webcache.googleusercontent.com/search?q=cache:ntS0lJxZw64J:www.csie.ntnu.edu.tw/~ghhwang/course_slices/PL/Chapter08.ppt+&cd=5&hl=en&ct=clnk&gl=us&client=safari Accessed February 21, 2016.
+http://webcache.googleusercontent.com/search?q=cache:ntS0lJxZw64J:www.csie.ntnu.edu.tw/~ghhwang/course_slices/PL/Chapter08.ppt+&cd=5&hl=en&ct=clnk&gl=us&client=safari Accessed February 25, 2016.
 
-http://www.tutorialspoint.com/ruby/ruby_loops.htm Accessed February 21, 2016.
+http://www.tutorialspoint.com/ruby/ruby_loops.htm Accessed February 29, 2016.
 
-http://www.tutorialspoint.com/ruby/ruby_if_else.htm Accessed February 25, 2016.
+http://www.tutorialspoint.com/ruby/ruby_if_else.htm Accessed February 29, 2016.
+
+http://www.skorks.com/2009/08/how-a-ruby-case-statement-works-and-what-you-can-do-with-it/ Accessed February 29, 2016.
 
 
 
