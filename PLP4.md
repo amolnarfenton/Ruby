@@ -26,16 +26,16 @@ end
 ```
 As you can see "x is 1" would get displayed because the condition of the if statement was not met so by 
 default the code went to the elsif statement. It should also be noted that you can have an many elsif statements but they 
-have to attached to an if statement. This means that they have to follow and if statement in the code. 
-Finally we have reached the last conditonal statement, which is the else statement. Like the elsif statement this one gets exucuted as a default when every other statement is false. Although, unlike the elsif statment there can only be one else statment and it has to either follow an elsif or an if statetment. Expanding upon the code above we can see how the else statment is used.
+have to be attached to an if statement. This means that they have to follow and if statement in the code. 
+Finally, we have reached the last conditonal statement, which is the else statement. Like the elsif statement this one gets exucuted as a default when the rest of the conditions have been looked at. Although, unlike the elsif statement there can only be one else statement and it has to either follow an elsif or an if statetment. Expanding upon the code above we can see how the else statment is used:
 ```
-x = 5
-if x > 10
-  put " x is greater than 10"
-elsif
-  put "x is less than 10"
+x=1
+if x > 2
+   puts "x is greater than 2"
+elsif x <= 2 and x!=0
+   puts "x is 1"
 else
-  put "This is a test"
+   puts "I can't guess the number"
 end
 ```
 
@@ -55,9 +55,8 @@ if x=5 || x>10
 end
 ```
 
-
 ###Dangeling Else Problem
-The dangeling else problem refers to a scenario where there is an ambiguous else statement meaning you don't know which if statement it belongs to. To fix this problem, Ruby uses statement sequences as clauses. This means that the placement of the if and else statements combined with and end statement allows tou to determine what if statement the else is refering to.  An example of this is shown below:
+The dangeling else problem refers to a scenario where there is an ambiguous else statement meaning you don't know which if statement it belongs to. To fix this problem, Ruby uses statement sequences as clauses. This means that the placement of the if and else statements combined with and end statement allows you to determine what if statement the else is refering to.  An example of this is shown below:
 ```
 if sum == 0 then
     if count == 0 then
@@ -81,7 +80,7 @@ while condition [do]
   code
 end
 ```
-Another was to execute a while loop is like this:
+Another way to execute a while loop is like this:
 ```
 code while condition
 OR
@@ -90,13 +89,13 @@ begin
   code 
 end while conditional
 ```
-The second loop I am going to look at is the until loop. Unlike the while look the until look is executed when the condition is false. in general the code looks like this:
+The second loop I am going to look at is the until loop. Unlike the while look the until loop is executed when the condition is false. in general the code looks like this:
 ```
 until conditional [do]
   code
 end
 ```
-Another was to execute a until loop is like this:
+Another way to execute a until loop is like this:
 
 ```
 code until conditional
@@ -115,7 +114,7 @@ Finally the last loop we are going to look at is the for loop. This loop is used
   puts "Value of local variable is #{i}"
 end
 ```
-Which gives you a display of this:
+Which gives you a display of:
 ```
 Value of local variable is 0
 Value of local variable is 1
@@ -126,7 +125,7 @@ Value of local variable is 5
 ```
 
 ###Exiting Loops And Other Stuff
-Sometime in your code you want to be able to exit out of a loop immediatly without going through the rest of the code this is where a break comes in. A break terminates the most inner loop. An example of this is:
+Sometimes in your code you want to be able to exit out of a loop immediatly without going through the rest of the code this is where a break comes in. A break terminates the most inner loop. An example of this is:
 ```
 for i in 0..5
   if i > 3 then
@@ -143,7 +142,7 @@ Value of local variable is 2
 Value of local variable is 3
 ```
 
-In some languages there is a reserved word called continue that allows you to keep going through the code. For Ruby the equivalent is the reserve word next. Next allows you to jump from where you are to the next inner loop of code. An example of this is:
+Also in some languages there is a reserved word called continue that allows you to keep going through the code. For Ruby the equivalent is the reserve word next. Next allows you to jump from where you are to the next inner loop of code. An example of this is:
 ```
 for i in 0..5
   if i > 2 then
@@ -158,7 +157,7 @@ Value of local variable is 3
 Value of local variable is 4
 Value of local variable is 5
 ```
-In addtion to the break and next function there is also a redo and retry funtion. The redo function restart the most inner loop of code without checking conditions. While the retry function keeps re-evaluating the code so it forms an infinte loop.
+In addtion to the break and next function there is also a redo and retry funtion. The redo function restarts the most inner loop of code without checking conditions. While the retry function keeps re-evaluating the code so it forms an infinte loop.
 ```
 for i in 1..5
    retry if  i > 2
@@ -177,7 +176,7 @@ Value of local variable is 2
 
 
 ###Switch Cases
-In Ruby these is something called a case statement. A case statement works by testing a condition statment by walking through possible matches by using a when. An example looks like this:
+In Ruby there is something called a case statement. A case statement works by testing a condition statment by walking through possible matches with the use of the word when. An example looks like this:
 
 ```
 grade = gets.chomp
@@ -189,7 +188,7 @@ when "B"
 when "C"
   puts 'You need help!!!'
 else
-  puts "You just making it up!"
+  puts "Uh Oh!"
 end
 ```
 
