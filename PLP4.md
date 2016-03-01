@@ -40,6 +40,9 @@ end
 x is less than 10
 ```
 
+
+
+
 ###Short-Curcit Evaluation
 Short-curcit evaluation is when there is a conditional statement with two parts and the second part only gets checked if the first part is false. This applies to && (and) and || (or). Below is an example for a && statement but the && could easily be replaced by || and shot-circut evaluation would still work:
 ```
@@ -48,6 +51,8 @@ if x=5 && x>10
 end
 ```
 In this case Ruby won't even look at x>10 becuase x=5 is a true statement.
+
+
 
 
 ###Dangeling Else
