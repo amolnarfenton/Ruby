@@ -116,7 +116,7 @@ x
 
 ###Scope
 
-In programing langauges it is important to know were you can access your variables, this is known as scope. For Ruby a varable that is declared in a loop or a method cannot be accessed by any thing outside of that loop or method. If you have varables of the same name in an inner section and an outer section they can not be written over eachother. For example if you have a variable x in a loop you can have a variable x out side of the loop and it will not conflict with the x in the loop. This is also true for methods. 
+In programing langauges it is important to know were you can access your variables, this is known as scope. For Ruby a varable that is declared in a loop or a method cannot be accessed by any thing outside of that loop or method. If you have variables of the same name in an inner section and an outer section they can not be written over eachother. For example if you have a variable x in a loop you can have a variable x out side of the loop and it will not conflict with the x in the loop. This is also true for methods. 
 
 If you would like a variable to be accessed in all aspects of the code you can set it to be a global variable. In order to create a global variable it is just like creating any other variable expect you need to have a $ before the name. For example:
 ```
