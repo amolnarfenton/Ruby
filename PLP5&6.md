@@ -22,7 +22,7 @@ If your your method has paramaters you can call the method as such:
 method_name 24, 6
 ```
 
-Remember when you are passing in parameters you have to know how many there are. If you pass in too many or too few ou will get a error in your code when you run it. 
+Remember when you are passing in parameters you have to know how many there are. If you pass in too many or too few you will get a error in your code when you run it. 
 
 ```
 def test(a1="Ruby", a2="Perl")
@@ -33,7 +33,7 @@ test "C", "C++"
 test
 ```
 ###Recursion
-Like other programing languages, Ruby suppports recusive functions. Now what is a recursive? Well a recursive funtion is a function/method that call upon itself. A simple example is below:
+Like other programing languages, Ruby suppports recusive functions. Now what is a recursive? Well a recursive function is a function/method that call upon itself. A simple example is below:
 ```
 def countdown(n)
   return if n.zero? 
@@ -56,11 +56,11 @@ def fib(n)
   fib(n-1) + fib(n-2) if n > 1
 end
 ```
-As you can see the method is called fib and in the actual method fib is called upon which initiates the recursive property.
+As you can see the method is called fib and in the actual method fib, fib is called upon which initiates the recursive property.
 
 ###Function Parameters
 
-Paramters in a programing language refer to what can get passed into a function for instance:
+Paramters in a programing language refer to what can get passed into a function, for instance:
 ```
 def method_name(var1, var2)
 end
@@ -70,7 +70,7 @@ Now those are the same type but in Ruby you can also pass in values with differe
 def some_method(25,"hello", 45, 67)
 end
 ```
-In Ruby there is a typle of parameter called Arguments with Default Values. This means that if a function does not have enough paramaters it will use a default value to fill that parameter. For example:
+In Ruby there is a type of parameter called Arguments with Default Values. This means that if a function does not have enough paramaters it will use a default value to fill that parameter. For example:
 ```
 def some_method(a, b, c=25)
 end
@@ -83,14 +83,14 @@ or
 ```
 some_method(25,"hello", 48)
 ```
-In the fist case there is not a value for the thid parameter so a default value is used which in this case would be 25.
+In the first case there is not a value for the third parameter so a default value is used which in this case would be 25.
 
-Another parameter tpe is called Optional Arguments. This allows you to decided at run time how many parameters there are and it is denoted as such:
+Another parameter type is called Optional Arguments. This allows you to decided at run time how many parameters there are and it is denoted as such:
 ```
 def some_method(*p)
 end
 ```
-Now you can call this method with either no argument or many arguments
+This means that you can call this method with either no argument or many arguments
 
 
 ```
@@ -118,13 +118,13 @@ x
 
 In programing langauges it is important to know were you can access your variables, this is known as scope. For Ruby a varable that is declared in a loop or a method cannot be accessed by any thing outside of that loop or method. If you have varables of the same name in an inner section and an outer section they can not be written over eachother. For example if you have a variable x in a loop you can have a variable x out side of the loop and it will not conflict with the x in the loop. This is also true for methods. 
 
-If you would like a variable to accessed in all aspects of the code you can set it to be a global variable. In order to create a global variable it is just like creating any other variable expect you need to have a $ before the name. For example:
+If you would like a variable to be accessed in all aspects of the code you can set it to be a global variable. In order to create a global variable it is just like creating any other variable expect you need to have a $ before the name. For example:
 ```
 $example = 5 
 ```
 
 ### Passed By Reference vs. Passed By Value
-Before we get to the application of Ruby we should first talk about what by reference and by value mean because different languages handel there variables differently and it's a good idea to know the difference. When passing a varable by reference it mean that the variable does not get changed in memory when you decide to change the value of that variable. On the other hand passing by value means that the variable does get changed in memory so when you change a varaibles value it only seens that new value and is no longer asociated to the old value. I read a good explination of the two where it said that passing by value is like giving someone a link to a web page. Since the person has the web page link they can actually see the changes being made. Now think about if instead of giving them the web page link you only gave them the print out of it. Now they can make changes to the print out but it won't effect the web page and you can make changes to the web page but you won't seen them on the print out. With our knowlege of  the difference between value and reference we can look specifically at Ruby. In Ruby variables are passed by by value, which means they do get changed in memory.
+Before we get to the application of Ruby we should first talk about what by reference and by value mean because different languages handle there variables differently and it's a good idea to know the difference. When passing a varable by reference it means that the variable does not get changed in memory when you decide to change the value of that variable. On the other hand passing by value means that the variable does get changed in memory so when you change a varaibles value it only seens that new value and is no longer asociated to the old value. I read a good explination of the two where it said that passing by value is like giving someone a link to a web page. Since the person has the web page link they can actually see the changes being made. Now think about if instead of giving them the web page link you only gave them the print out of it. Now you can make changes to the print out but it won't effect the web page and they can make changes to the web page but you won't seen them on the print out. With our knowlege of the difference between value and reference we can look specifically at Ruby. In Ruby variables are passed by value, which means they do get changed in memory.
 ### Sources 
 http://www.tutorialspoint.com/ruby/ Accessed March 22,2016.
 
