@@ -125,6 +125,31 @@ $example = 5
 
 ### Passed By Reference vs. Passed By Value
 Before we get to the application of Ruby we should first talk about what by reference and by value mean because different languages handle there variables differently and it's a good idea to know the difference. When passing a varable by reference it means that the variable does not get changed in memory when you decide to change the value of that variable. On the other hand passing by value means that the variable does get changed in memory so when you change a varaibles value it only seens that new value and is no longer asociated to the old value. I read a good explination of the two where it said that passing by value is like giving someone a link to a web page. Since the person has the web page link they can actually see the changes being made. Now think about if instead of giving them the web page link you only gave them the print out of it. Now you can make changes to the print out but it won't effect the web page and they can make changes to the web page but you won't seen them on the print out. With our knowlege of the difference between value and reference we can look specifically at Ruby. In Ruby variables are passed by value, which means they do get changed in memory.
+
+Lets look at some code:
+```
+a = Array.new(3)
+a = ["c","a","t"] 
+
+b = Array.new(3)
+b = ["d","o","g"] 
+
+a=b
+b[1] = 'u'
+puts a 
+puts b
+```
+
+The output of this code is:
+```
+d
+u
+g
+d
+u
+g
+```
+This output shows that array a becomes array b when they are set equal to each other and then in the location [1] of array b "o" gets change to "u" which also shows that "o" gets changed to "u" in the a array as well. Since the value of location [1] gets changed in both arrray it confirms that Ruby passes variables by value because the value changed for both array a and b meaning it changed in memory.
 ### Sources 
 http://www.tutorialspoint.com/ruby/ Accessed March 22,2016.
 
